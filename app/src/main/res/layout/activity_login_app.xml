@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.Home.LoginAppActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutDX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDN"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorWhite">
+            <ImageView
+                android:id="@+id/img_qrorrfid"
+                android:layout_gravity="start"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:scaleType="centerInside"
+                android:onClick="backDN"
+                android:padding="@dimen/dimen_10dp"
+                android:src="@drawable/backcomic"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_18sp"
+                android:text="@string/DangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:src="@drawable/susnnn" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:hint="@string/TenDN" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:hint="@string/MK"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_blue"
+            android:onClick="actionLogin"
+            android:text="@string/DangNhap"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_sigupLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:gravity="center"
+            android:onClick="openRegister"
+            android:text="@string/ChuaCoTKDKNgay"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/font_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="135dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/colorBlue" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/HoacSD"
+                android:textColor="@color/colorBlue" />
+
+            <View
+                android:layout_width="135dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/colorBlue" />
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

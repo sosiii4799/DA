@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activity.Comic.ComicChapterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarChapter"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorWhite">
+            <ImageView
+                android:padding="@dimen/dimen_10dp"
+                android:id="@+id/img_qrorrfid"
+                android:layout_gravity="start"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:onClick="backComicChapter"
+                android:src="@drawable/backcomic"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_18sp"
+                android:text="@string/ThongTinTruyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtTenTruyenChapter"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Susnnn"
+            android:textSize="@dimen/font_18sp"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:padding="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgAnhTruyenChapter"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="@dimen/dimen_120dp"
+                android:src="@drawable/nen"/>
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tác giả: "
+                        android:textSize="@dimen/font_14sp"
+                        android:textColor="@color/colorXam"/>
+                    <TextView
+                        android:id="@+id/txtTacGia"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trinh thám"
+                        android:textSize="@dimen/font_14sp"
+                        android:textColor="@color/colorXam"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thể loại: "
+                        android:textSize="@dimen/font_14sp"
+                        android:textColor="@color/colorXam"/>
+                    <TextView
+                        android:id="@+id/txtTheLoaiChapter"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trinh thám"
+                        android:textSize="@dimen/font_14sp"
+                        android:textColor="@color/colorXam"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:padding="@dimen/dimen_2dp"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:src="@drawable/iconunlove"/>
+                    <TextView
+                        android:id="@+id/txtlikeComicChapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1999"
+                        android:textSize="@dimen/font_14sp"
+                        android:layout_marginTop="@dimen/dimen_2dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"/>
+
+                    <ImageView
+                        android:padding="@dimen/dimen_2dp"
+                        android:layout_width="@dimen/dimen_25dp"
+                        android:layout_height="@dimen/dimen_25dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:src="@drawable/view"/>
+                    <TextView
+                        android:id="@+id/txtViewComicChapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1999"
+                        android:textSize="@dimen/font_14sp"
+                        android:layout_marginTop="@dimen/dimen_2dp"
+                        android:layout_marginLeft="@dimen/dimen_5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutComicChapter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorOrange"
+            app:tabTextColor="@color/colorWhite"
+            app:tabIndicatorHeight="@dimen/dimen_2dp"
+            android:background="@color/colorXam">
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPageComicChapter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

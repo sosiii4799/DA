@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lstChapterComic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLoveComic"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/iconunlove" />
+
+        <RelativeLayout
+            android:id="@+id/layoutReading"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@color/colorOrange"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtReading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DocTruyen"
+                android:textSize="@dimen/font_20sp"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

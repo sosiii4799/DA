@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DangNhap">Đăng Nhập</string>
+    <string name="DangKi">Đăng kí</string>
+    <string name="ThongTinTruyen">Thông tin truyện</string>
+    <string name="ChinhSuaThongTin">Chỉnh sửa thông tin</string>
+    <string name="TaiAnhLen">Tải ảnh lên</string>
+    <string name="Ho">Họ</string>
+    <string name="TenCuaBan">Tên của bạn</string>
+    <string name="SDT">Số điện thoại</string>
+    <string name="DiaChi">Địa chỉ</string>
+    <string name="GioiTinh">Giới tính</string>
+    <string name="Nu">Nữ</string>
+    <string name="Nam">Nam</string>
+    <string name="Email">Email</string>
+    <string name="NgaySinh">Ngày sinh</string>
+    <string name="XacNhan">Xác nhận</string>
+    <string name="ThayDoiMK">Thay đổi mật khẩu</string>
+    <string name="MKCu">Mật khẩu cũ</string>
+    <string name="MK">Mật khẩu</string>
+    <string name="MKMoi">Mật khẩu mới</string>
+    <string name="XacNhanMK">Xác nhận mật khẩu</string>
+    <string name="TenDN">Tên đăng nhập</string>
+    <string name="ChuaCoTKDKNgay">Chưa có tài khoản? Đăng kí ngay</string>
+    <string name="HoacSD">Hoặc sử dụng</string>
+    <string name="MotSPCua">Một sản phẩm của</string>
+    <string name="SVUTC">sinh viên UTC</string>
+    <string name="TruyenDcUaThich">Truyện được ưa thích</string>
+    <string name="TOP3">TOP 3 truyện được ưa thích nhất</string>
+    <string name="DKTK">Đăng kí tài khoản</string>
+    <string name="NhapHo">Nhập họ</string>
+    <string name="NhapTen">Nhập tên</string>
+    <string name="NhapSDT">Nhập SĐT</string>
+    <string name="NhapDiaChi">Nhập địa chỉ</string>
+    <string name="NhapDiaChiEmail">Nhập địa chỉ Email</string>
+    <string name="TimKiemTruyen">Tìm kiếm truyện</string>
+    <string name="DocTruyen">ĐỌC TRUYỆN</string>
+    <string name="DocTiep">ĐỌC TIẾP</string>
+    <string name="DSTruyen">Danh sách truyện:</string>
+    <string name="XepHang">Xếp hạng</string>
+    <string name="TimKiem">Tìm kiếm</string>
+    <string name="TheLoaiTruyen">Thể loại truyện</string>
+    <string name="TruyenTheoTheLoai">Truyện theo thể loại</string>
+    <string name="TruyenDgTheoDoi">Truyện đang theo dõi</string>
+    <string name="VuiLongDangNhap">Vui lòng đăng nhập</string>
+    <string name="DeTraiNghiemApp">để trải nghiệm tất cả các tính năng của app</string>
+    <string name="TaiKhoan">Tài khoản</string>
+    <string name="HoiVien">Hội viên</string>
+    <string name="HoSoCaNhan">Hồ sơ cá nhân</string>
+    <string name="HoVaTen">Họ và tên:</string>
+    <string name="TenTaiKhoan">Tên tài khoản:</string>
+    <string name="SoDienThoai">Số điện thoại:</string>
+    <string name="GioiTinhTT">Giới tính:</string>
+    <string name="EmailTT">Email:</string>
+    <string name="NgaySinhTT">Ngày sinh:</string>
+    <string name="DiaChiTT">Địa chỉ:</string>
+    <string name="SuaTTTaiKhoan">Sửa thông tin tài khoản</string>
+    <string name="DangXuat">Đăng xuất</string>
+    <string name="DoiNgonNgu">Thay đổi ngôn ngữ</string>
+    <string name="TiengViet">Tiếng Việt</string>
+    <string name="TiengAnh">English</string>
+    <string name="NhapNDCanTimKiem">Nhập nội dung cần tìm kiếm</string>
+    <string name="DoiMKTK">Đổi mật khẩu tài khoản</string>
+    <string name="PhanHoi">Gửi phản hồi</string>
+    <string name="GuiPhanHoi">Bạn không hài lòng về dịch vụ hoặc có nhu cầu bổ sung kho truyện hãy gửi phản hồi về cho chúng tôi</string>
+
+
+
+    <string name="TheLoai">Thể Loại</string>
+    <string name="TheoDoi">Theo Dõi</string>
+    <string name="ThongTin">Thông Tin</string>
+    <string name="ThongBao">Thông Báo</string>
+    <string name="BanCanDangNhapDeTheoDoi">Bạn cần đăng nhập để theo dõi truyện !</string>
+    <string name="Huy">Hủy</string>
+    <string name="BanCanDNDeTraiNghiemApp">Bạn cần đăng nhập để trải nghiệm !</string>
+    <string name="XacNhanDN">Xác Nhận Đăng Nhập</string>
+    <string name="BanChuaDKTheoDoiTruyen">Bạn chưa đăng kí theo dõi truyện</string>
+    <string name="KhongDcDeTrongTT">Bạn không được để trống thông tin</string>
+    <string name="MKXNKhongChinhXac">Mật khẩu xác nhận không đúng</string>
+    <string name="TenTKBiTrung">Tài khoản đăng kí đã được sử dụng</string>
+    <string name="VuiLongDoi">Vui lòng đợi trong chốc lát</string>
+    <string name="NhapTK">Nhập tài khoản</string>
+    <string name="BatBuoc">Bắt buộc</string>
+    <string name="TraCuuTT">Tra cứu thông tin Cov19</string>
+    <string name="TTDichBenh">Thông tin dịch bệnh</string>
+    <string name="VIETNAM">Việt Nam</string>
+    <string name="THEGIOI">Thế Giới</string>
+    <string name="XemChiTiet">Xem chi tiết</string>
+    <string name="KhaiBao">KHAI BÁO Y TẾ TỰ NGUYỆN</string>
+    <string name="HuongDan">HƯỚNG DẪN PHÒNG CHỐNG DỊCH</string>
+
+
+    <string name="TTVietNam">Thông tin Việt Nam</string>
+    <string name="TTTheGioi">Thông tin Thế Giới</string>
+    <string name="NhiemBenh">Nhiễm bệnh</string>
+    <string name="TuVong">Tử vong</string>
+    <string name="BinhPhuc">Bình phục</string>
+
+
+
+    <string name="StayHome">Ở nhà đọc truyện ngăn ngừa Cov19</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAnhTruyen"
+            android:layout_width="@dimen/dimen_90dp"
+            android:layout_height="@dimen/dimen_90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nen" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTenTruyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Susnnn"
+                android:textSize="@dimen/font_18sp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtTheLoai"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trinh thám"
+                android:textSize="@dimen/font_14sp"
+                android:textColor="@color/colorXam"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="@dimen/dimen_2dp"
+                    android:layout_width="@dimen/dimen_25dp"
+                    android:layout_height="@dimen/dimen_25dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:src="@drawable/iconunlove"/>
+                <TextView
+                    android:id="@+id/txtlikeComic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1999"
+                    android:textSize="@dimen/font_14sp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"/>
+
+                <ImageView
+                    android:padding="@dimen/dimen_2dp"
+                    android:layout_width="@dimen/dimen_25dp"
+                    android:layout_height="@dimen/dimen_25dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:src="@drawable/view"/>
+                <TextView
+                    android:id="@+id/txtViewComic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1999"
+                    android:textSize="@dimen/font_14sp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

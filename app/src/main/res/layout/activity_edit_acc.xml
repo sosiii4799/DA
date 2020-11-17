@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.Home.EditAccActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/signup_buttonEdit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarChapter"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:background="@color/colorWhite">
+                <ImageView
+                    android:padding="@dimen/dimen_10dp"
+                    android:id="@+id/img_qrorrfid"
+                    android:layout_gravity="start"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:onClick="backEditAcc"
+                    android:src="@drawable/backcomic"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_18sp"
+                    android:text="@string/ChinhSuaThongTin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dimen_135dp"
+                android:layout_height="@dimen/dimen_135dp">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:id="@+id/EditImgV"
+                    android:layout_width="@dimen/dimen_135dp"
+                    android:layout_height="@dimen/dimen_135dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/TaiAnhLen"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ChinhSuaThongTin"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/dimen_35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/Ho"
+                android:textColor="@color/colorBlue" />
+
+            <EditText
+                android:id="@+id/editHo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/TenCuaBan"
+                android:textColor="@color/colorBlue" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dimen_5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/SDT"
+                android:textColor="@color/colorBlue" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/DiaChi"
+                android:textColor="@color/colorBlue" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:gravity="start"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="@dimen/dimen_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/GioiTinh"
+                android:textColor="@color/colorBlue" />
+
+            <RadioGroup
+                android:id="@+id/radiogroupGioitinhEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/checkNuEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/Nu" />
+
+                <RadioButton
+                    android:id="@+id/checkNamEdit"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/Nam" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/Email"
+                android:textColor="@color/colorBlue" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/NgaySinh"
+                android:textColor="@color/colorBlue" />
+
+            <TextView
+                android:id="@+id/editDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:inputType="none"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:text="09/11/1992" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/signup_buttonEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:background="@color/colorXam"
+        android:text="@string/XacNhan"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
